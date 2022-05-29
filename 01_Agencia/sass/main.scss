@@ -1,0 +1,8 @@
+// por defecto compila en el archivo main de sass
+//npm install sass -g de manera global
+// atraves de cd ingresamos a la carpeta  escribimos sass --watch sass/main.scss css/estilos.css
+@import "base/base";
+@import "base/constantes";
+
+@import "modulos/header";
+@import "modulos/servicios";

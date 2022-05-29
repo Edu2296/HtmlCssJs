@@ -1,0 +1,72 @@
+.header{
+    // border: 1px solid blue;
+    background-image: url(../img/header-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    &__nav{
+        // border: 0.2rem solid red;
+        padding: 2.5rem 0;
+        &__contenedor{
+            // border: 0.2rem solid green;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &--logo{
+                // border: 0.2rem solid black;
+                color: #fec503;
+                font-family: $font-kaushan;
+                font-size:4rem;
+            }
+            &__menu{
+                // border: 0.2rem solid blue;
+                display: flex;
+                &__item{
+                    // border: 0.1rem solid white;
+                    &--link{
+                        // border: 0.1rem solid purple;
+                        color: white;
+                        font-size: 2rem;
+                        font-family: $font-mont;
+                        text-transform: uppercase;
+                        display: inline-block;  
+                        padding:.5rem 1rem;
+                        transition: all .3s; //efecto de salida
+                    }
+                    &--link:hover{//no sirve para darle efecto de entrada
+                        color:#fec503;
+                        transition:all .3s;
+
+                    }
+                }
+            }
+        }
+    }
+    &__bienvenida{
+        // border: .2rem solid lightgoldenrodyellow;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        height: calc(100% - 9rem);
+        &--subtitulo{
+            // border: .2rem solid blue;
+            font-family: $font-merri;
+            font-size:3.5rem;
+            color:white;
+            font-style: italic;
+            text-align:center;
+            text-transform: uppercase;
+        }
+        &--titulo{
+            // border: .2rem solid black;
+            font-family: $font-mont;
+            font-size:7.5rem;
+            color:white;
+            text-align:center;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+       
+    }
+}

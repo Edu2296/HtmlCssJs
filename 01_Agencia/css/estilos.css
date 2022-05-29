@@ -1,0 +1,318 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+TAMAÑO DE LA FUENTE POR DEFECTO
+16px -> 1.6rem
+10px -> 1rem
+16px ->100%
+10px -> 62.5%
+*/
+html {
+  font-size: 62.5%;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/**********************************/
+.contenedor {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+}
+
+.btn-amarillo {
+  color: white;
+  background-color: #fed136;
+}
+
+.titulo-n2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titulo-n3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.resumen-n2 {
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+  color: #6c757d;
+  text-align: center;
+  font-style: italic;
+}
+
+.resumen-n3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  color: #6c757d;
+  text-align: center;
+  line-height: 2.8rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.mb-7 {
+  margin-bottom: 7rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+.mb-9 {
+  margin-bottom: 9rem;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.mt-9 {
+  margin-top: 9rem;
+}
+
+.mt-10 {
+  margin-top: 10rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.pt-7 {
+  padding-top: 7rem;
+}
+
+.pt-8 {
+  padding-top: 8rem;
+}
+
+.pt-9 {
+  padding-top: 9rem;
+}
+
+.pt-10 {
+  padding-top: 10rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.pb-6 {
+  padding-bottom: 6rem;
+}
+
+.pb-7 {
+  padding-bottom: 7rem;
+}
+
+.pb-8 {
+  padding-bottom: 8rem;
+}
+
+.pb-9 {
+  padding-bottom: 9rem;
+}
+
+.pb-10 {
+  padding-bottom: 10rem;
+}
+
+.header {
+  background-image: url(../img/header-bg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.header__nav {
+  padding: 2.5rem 0;
+}
+.header__nav__contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav__contenedor--logo {
+  color: #fec503;
+  font-family: "Kaushan Script", cursive;
+  font-size: 4rem;
+}
+.header__nav__contenedor__menu {
+  display: flex;
+}
+.header__nav__contenedor__menu__item--link {
+  color: white;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+.header__nav__contenedor__menu__item--link:hover {
+  color: #fec503;
+  transition: all 0.3s;
+}
+.header__bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 9rem);
+}
+.header__bienvenida--subtitulo {
+  font-family: "Merriweather", serif;
+  font-size: 3.5rem;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__bienvenida--titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.servicios__contenedor__caja {
+  display: flex;
+  justify-content: space-between;
+}
+.servicios__contenedor__caja__item {
+  width: calc(33.3333333333% - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicios__contenedor__caja__item--logo {
+  width: 12.8rem;
+  height: 12.8rem;
+  background-color: #fed136;
+  color: white;
+  font-size: 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=estilos.css.map */
