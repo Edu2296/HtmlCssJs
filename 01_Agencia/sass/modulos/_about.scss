@@ -1,0 +1,40 @@
+.about{
+    &__contenedor{
+        &__timeline::before{
+            content: "";
+            width: 1rem;
+            background-color:#e9ecef;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+        &__timeline{
+            position: relative;
+           
+            &__item {
+               
+                height:40rem;
+                position: relative;
+                &__imgBox{
+                    
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 15rem;
+                    height: 15rem;
+                    border: 0.6rem solid #e9ecef;
+                    border-radius:50%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        // border-radius: 50%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

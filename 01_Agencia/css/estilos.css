@@ -27,6 +27,7 @@ ul {
 
 /**********************************/
 .contenedor {
+  background-color: peru;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -364,6 +365,38 @@ ul {
 .portafolio__contenedor__caja__item__data {
   background-color: white;
   padding: 2rem 0;
+}
+
+.about__contenedor__timeline::before {
+  content: "";
+  width: 1rem;
+  background-color: #e9ecef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about__contenedor__timeline {
+  position: relative;
+}
+.about__contenedor__timeline__item {
+  height: 40rem;
+  position: relative;
+}
+.about__contenedor__timeline__item__imgBox {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 15rem;
+  border: 0.6rem solid #e9ecef;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about__contenedor__timeline__item__imgBox img {
+  width: 100%;
+  display: block;
 }
 
 /*# sourceMappingURL=estilos.css.map */
