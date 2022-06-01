@@ -264,6 +264,9 @@ ul {
 }
 .header__nav {
   padding: 2.5rem 0;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s;
 }
 .header__nav__contenedor {
   display: flex;
@@ -274,6 +277,7 @@ ul {
   color: #fec503;
   font-family: "Kaushan Script", cursive;
   font-size: 4rem;
+  transition: all 0.3s;
 }
 .header__nav__contenedor__menu {
   display: flex;
@@ -289,6 +293,15 @@ ul {
 }
 .header__nav__contenedor__menu__item--link:hover {
   color: #fec503;
+  transition: all 0.3s;
+}
+.header__nav.active {
+  background-color: #212529;
+  padding: 1rem 0;
+  transition: all 0.3s;
+}
+.header__nav.active .header__nav__contenedor--logo {
+  font-size: 3rem;
   transition: all 0.3s;
 }
 .header__bienvenida {
@@ -528,6 +541,44 @@ ul {
 }
 .contacto__contenedor__form--btnBox {
   width: 100%;
+}
+
+.footer__contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contenedor__redes {
+  text-align: center;
+  padding: 1rem;
+}
+.footer__contenedor__redes a {
+  display: inline-block;
+}
+.footer__contenedor__redes a:not(:last-child) {
+  margin-right: 2rem;
+}
+.footer__contenedor__redes i {
+  font-size: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer__contenedor__texto1 {
+  padding: 1.2rem 0;
+}
+.footer__contenedor__texto2 {
+  padding: 1.2rem 0;
+}
+.footer__contenedor__texto2 a {
+  display: inline-block;
+}
+.footer__contenedor__texto2 a:not(:last-child) {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */
