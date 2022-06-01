@@ -27,7 +27,7 @@ ul {
 
 /**********************************/
 .contenedor {
-  width: 80%;
+  width: 120rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -471,6 +471,14 @@ ul {
   color: #6c757d;
   padding: 0 15%;
   line-height: 2.8rem;
+}
+
+.sponsors__contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+.sponsors__contenedor a {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=estilos.css.map */
