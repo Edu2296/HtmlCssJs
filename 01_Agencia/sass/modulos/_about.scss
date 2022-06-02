@@ -9,6 +9,10 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
+            // responsive
+            @media only screen and (max-width: $bp-medium){
+                left: 4.6rem;
+            }
         }
         &__timeline{
             position: relative;
@@ -25,6 +29,15 @@
                     border: 0.6rem solid #e9ecef;
                     border-radius:50%;
                     overflow: hidden;
+                    @media only screen and (max-width: $bp-large){
+                        width: 10rem;
+                        height: 10rem;
+                    }
+                    @media only screen and (max-width: $bp-medium){
+                        width: 8rem;
+                        height: 8rem;
+                        left: 4.6rem;
+                    }
                     img{
                         width: 100%;
                         // border-radius: 50%;
@@ -34,23 +47,40 @@
                 &__panel{
                     // border: 0.6rem solid red;
                     width: 30%;
+                    @media only screen and (max-width: $bp-medium){
+                        width: auto;
+                    }
                 }
                 // usamos seudoclases para moverlos paneles
                 &:nth-child(odd){
                     .about__contenedor__timeline__item__panel{
                         text-align: right;
                         margin-left: 9%;
+                        @media only screen and (max-width: $bp-medium){
+                            text-align: left;
+                            margin-left: 13rem;
+                        }
                     }
                 }
                 &:nth-child(even){
                     .about__contenedor__timeline__item__panel{ 
                         margin-left: auto;
                         margin-right: 9%;
+                        @media only screen and (max-width: $bp-medium){
+                            margin-left: 13rem;
+                            margin-right: 0;
+                        }
                     }
                 }
             }
             .lastItem{
                 height:16.2rem;
+                @media only screen and (max-width: $bp-large){
+                    height: 11.2rem;
+                }
+                @media only screen and (max-width: $bp-medium){
+                    height: 9.2rem;
+                }
                div{
                    background-color : #ffc800;
                    display: flex;
@@ -62,6 +92,13 @@
                        font-weight: 700;
                        font-family: $font-mont;
                        text-align: center;
+                       @media only screen and (max-width: $bp-large){
+                        font-size: 1.3rem;
+                        padding: 0 1.5rem;
+                    }
+                    @media only screen and (max-width: $bp-medium){
+                        font-size: 1rem;
+                    }
                    }
                }
             }   

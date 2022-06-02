@@ -15,6 +15,8 @@
 //     }
 // })
 const nav = document.querySelector('.header__nav');
+const menu = document.querySelector('.header__nav__contenedor__menu');
+const btn = document.querySelector('.header__nav__contenedor--btn');
 // console.log('nav');
 window.addEventListener('scroll', function(){
         
@@ -24,4 +26,8 @@ window.addEventListener('scroll', function(){
         else{
             nav.classList.remove('active');
         }
+    })
+    btn.addEventListener('click', function(){
+        // console.log('hiciste click');
+        menu.classList.toggle('mostrarMenu');
     })
