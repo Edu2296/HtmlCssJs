@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* BREAKPOINTS */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,11 @@ TAMAÑO DE LA FUENTE POR DEFECTO
 */
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 a,
@@ -30,6 +36,21 @@ ul {
   width: 120rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 62em) {
+  .contenedor {
+    max-width: 72rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .contenedor {
+    max-width: 54rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .contenedor {
+    padding: 0 2rem;
+  }
 }
 
 .btn {
@@ -267,6 +288,13 @@ ul {
   position: fixed;
   width: 100%;
   transition: all 0.3s;
+  z-index: 1;
+}
+@media only screen and (max-width: 62em) {
+  .header__nav {
+    background-color: #212529;
+    padding: 1rem 0;
+  }
 }
 .header__nav__contenedor {
   display: flex;
@@ -276,24 +304,79 @@ ul {
 .header__nav__contenedor--logo {
   color: #fec503;
   font-family: "Kaushan Script", cursive;
-  font-size: 4rem;
+  font-size: 2.8rem;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 62em) {
+  .header__nav__contenedor--logo {
+    font-size: 2rem;
+    z-index: 1;
+  }
 }
 .header__nav__contenedor__menu {
   display: flex;
 }
+@media only screen and (max-width: 62em) {
+  .header__nav__contenedor__menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.88);
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  .header__nav__contenedor__menu.mostrarMenu {
+    left: 0;
+    transition: all 0.5s;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .header__nav__contenedor__menu__item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
 .header__nav__contenedor__menu__item--link {
   color: white;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 62em) {
+  .header__nav__contenedor__menu__item--link {
+    font-size: 2.8rem;
+  }
 }
 .header__nav__contenedor__menu__item--link:hover {
   color: #fec503;
   transition: all 0.3s;
+}
+.header__nav__contenedor--btn {
+  background-color: rgba(254, 197, 3, 0.8);
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 62em) {
+  .header__nav__contenedor--btn {
+    display: block;
+    z-index: 1;
+  }
+}
+.header__nav__contenedor i {
+  margin-left: 0.5rem;
 }
 .header__nav.active {
   background-color: #212529;
@@ -319,6 +402,11 @@ ul {
   text-align: center;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 48em) {
+  .header__bienvenida--subtitulo {
+    font-size: 2rem;
+  }
+}
 .header__bienvenida--titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 7.5rem;
@@ -326,6 +414,11 @@ ul {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+}
+@media only screen and (max-width: 48em) {
+  .header__bienvenida--titulo {
+    font-size: 6rem;
+  }
 }
 
 .servicios__contenedor__caja {
