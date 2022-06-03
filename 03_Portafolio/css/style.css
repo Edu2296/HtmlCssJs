@@ -1,0 +1,28 @@
+/*------------tema web------------*/
+:root{
+   --hue-1:257;
+   --hue-2:47;
+   --bg-color:hsl(var(--hue-1),100%,97%); 
+   --main-color-1:hsl(var(--hue-1),100%,60%); 
+   --main-color-dark-1:hsl(var(--hue-1),69%,50%); 
+   --main-color-2:hsl(var(--hue-2),100%,61%); 
+   --main-color-dark-2:hsl(var(--hue-2),82%,55%); 
+}
+
+/*------------estilos generales------------*/
+
+*,
+/* antes de todo el contenido */
+*::before,
+/* despues de todo el contenido */
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* desbordamiendo en x */
+    overflow-x: hidden;
+    background-color:hsl(257, 100%, 97%);
+}
