@@ -1,0 +1,12 @@
+min-height:100vh;
+box-sizing: border-box
+list-style-type: none;
+overflow: hidden;
+max-width:100%;
+------flexboxs------
+display: flex;
+align-items: center;
+justify-content: center;
+display: block;
+--------efectos--------
+button:hover
