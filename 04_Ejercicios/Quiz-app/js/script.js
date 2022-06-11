@@ -49,7 +49,7 @@ loadQuiz();
 
 function loadQuiz(){
     const  currentQuizData = quizData[currentQuestion];
-    questionEl.innerHTML=quizData[currentQuestion];
+    questionEl.innerHTML=currentquizData.question;
 
     currentQuestion++;
 }
