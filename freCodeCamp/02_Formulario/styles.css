@@ -1,0 +1,113 @@
+:root{
+    /* creamos variables */
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    font-weight:400;
+    line-height:1.4;
+    background-image: linear-gradient(115deg,rgba(58,58,158,0.8), rgba(136,136,206,0.7)),url(https://images.unsplash.com/photo-1593672572837-d1bb82b59370?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: #fff;
+}
+
+.container{
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+header{
+    /* border:2px solid red; */
+    text-align: 
+    center;
+    
+   
+}
+#title {
+    /* border:2px solid blue; */
+   font-size: 40px;
+   margin-bottom:0;
+   
+  
+}
+#description {
+    /* border:2px solid green; */
+    font-size:20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-style: italic; 
+}
+
+#survey-form{
+    background-color:rgba(41, 41, 71,0.8);
+    padding:50px;
+    width:700;
+}
+.form-group{
+    /* display: flex; */
+    margin-bottom:30px;
+    font-size: 20px; 
+}
+.form-control{
+    margin-top:10px;
+    font-size:20px;
+    padding:5px;
+    border-radius: 5px;
+    width:700px;
+    /* text-align: center; */
+    border: none;
+}
+.text{
+    width:686px;
+}
+.form-control-description-radio{
+margin-bottom:10px;
+}
+.form-control-description-check{
+    margin-bottom:10px;
+    }
+    .form-control-description-textarea{
+        margin-top:0px;
+        margin-bottom:10px;
+        }
+[type='radio']{
+    margin:0px 10px 20px 0px;
+    
+    }
+.form-control-description-list{
+        margin-bottom:0px;
+        margin-top:0px;
+}
+[type='checkbox']{
+    margin:0px 10px 20px 0px;
+    
+    }
+
+.input-textarea{
+    width:678px;
+    height:120px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.submit-button{
+    width:700px;
+    height:50px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    border-radius:5px;
+    border: none;
+    color: #fff;
+    background-color:rgba(55, 175, 101 ,0.8)
+}
